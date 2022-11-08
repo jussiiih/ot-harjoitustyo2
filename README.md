@@ -1,4 +1,8 @@
-**README**
+#Ohjelmistotekniikan harjoitustyö#
+
+##Tehtävät##
+
+###Viikko 1###
 
 Tässä koitan mitä tapahtuu, jos yritän *kursivoida tekstiä.* Tai sitten voisin yrittää ***kursivoida JA lihavoida samaan aikaa.***
 
