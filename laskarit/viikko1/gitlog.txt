@@ -1,0 +1,10 @@
+commit 7a0389e3a7e05e14fef36e58613e5ad64bea28ef
+Author: Jussi Heino <juha-pekka.heino@helsinki.fi>
+Date:   Sat Nov 5 15:38:02 2022 +0200
+
+    file 1 2 3 lisätty
+
+ file1 | 0
+ file2 | 0
+ file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
