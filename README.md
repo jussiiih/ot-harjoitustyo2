@@ -1,8 +1,8 @@
-#Ohjelmistotekniikan harjoitustyö
+# Ohjelmistotekniikan harjoitustyö
 
-##Tehtävät
+## Tehtävät
 
-###Viikko 1
+### Viikko 1
 
 Tässä koitan mitä tapahtuu, jos yritän *kursivoida tekstiä.* Tai sitten voisin yrittää ***kursivoida JA lihavoida samaan aikaa.***
 
