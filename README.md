@@ -11,3 +11,5 @@
 ### Viikko 2
 
 [vaativuusmäärittely](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[tuntikirjanpito](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/dokumentaatio/tuntikirjanpito.md)
