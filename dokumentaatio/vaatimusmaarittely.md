@@ -14,7 +14,8 @@ Yksinkertaisimmassa versiossa sovelluksella on ainoastaan yksi käyttäjärooli 
 
 ## Käyttöliittymäluonnos 
 
-![Kuva käyttöliittymäluonnoksesta](/kayttoliittymaluonnos.png) 
+![Käyttöliittymäluonnos](https://user-images.githubusercontent.com/107620116/201648827-4fa6df9a-a9e1-44df-aabb-989480384f4a.png)
+
 
 ## Perusversion tarjoama toiminnallisuus 
 
