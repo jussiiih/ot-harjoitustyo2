@@ -1,4 +1,4 @@
-# Työaikakirjanpito
+# Tuntikirjanpito
 
 | PVM | aika | tehtävät  |
 | :----:|:-----| :-----|
