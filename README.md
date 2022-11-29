@@ -10,7 +10,7 @@
 
 ### Viikko 2
 
-[testikattavuusraportti]
+[testikattavuusraportti](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko2/Testikattavuusraportti.PNG)
 
 [vaativuusmäärittely](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
