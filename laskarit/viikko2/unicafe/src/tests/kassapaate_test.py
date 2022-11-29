@@ -60,14 +60,90 @@ class TestKassapaate(unittest.TestCase):
         self.kassapaate.syo_maukkaasti_kateisella(300)
         self.assertEqual(self.kassapaate.maukkaat, 0)
 
- #seuraavissa testeissä tarvitaan myös Maksukorttia jonka oletetaan toimivan oikein
-#Korttiosto toimii sekä edullisten että maukkaiden lounaiden osalta
+    def test_edulliseen_tarpeeksi_rahaa_summa_kortilta(self):
+        self.assertEqual(self.kassapaate.syo_edullisesti_kortilla(self.maksukortti), True)
 
- #   Jos kortilla on tarpeeksi rahaa, veloitetaan summa kortilta ja palautetaan True
-  #  Jos kortilla on tarpeeksi rahaa, myytyjen lounaiden määrä kasvaa
-   # Jos kortilla ei ole tarpeeksi rahaa, kortin rahamäärä ei muutu, myytyjen lounaiden määrä muuttumaton ja palautetaan False
-    #Kassassa oleva rahamäärä ei muutu kortilla ostettaessa
+    def test_maukkaaseen_tarpeeksi_rahaa_summa_kortilta(self):
+        self.assertEqual(self.kassapaate.syo_maukkaasti_kortilla(self.maksukortti), True)
 
-#Kortille rahaa ladattaessa kortin saldo muuttuu ja kassassa oleva rahamäärä kasvaa ladatulla summalla
+    def test_edulliseen_tarpeeksi_rahaa_lounasmaara_kasvaa(self):
+        self.kassapaate.syo_edullisesti_kortilla(self.maksukortti)
+        self.assertEqual(self.kassapaate.edulliset, 1)
+
+    def test_maukkaaseen_tarpeeksi_rahaa_lounasmaara_kasvaa(self):
+        self.kassapaate.syo_maukkaasti_kortilla(self.maksukortti)
+        self.assertEqual(self.kassapaate.maukkaat, 1)
+
+    def test_edulliseen_ei_tarpeeksi_rahaa_saldo_pysyy(self):
+        kortti = Maksukortti(100)
+        self.kassapaate.syo_edullisesti_kortilla(kortti)
+        self.assertEqual(kortti.saldo, 100)
+
+    def test_maukkaseen_ei_tarpeeksi_rahaa_saldo_pysyy(self):
+        kortti = Maksukortti(300)
+        self.kassapaate.syo_maukkaasti_kortilla(kortti)
+        self.assertEqual(kortti.saldo, 300)
+
+    def test_edulliseen_ei_tarpeeksi_rahaa_saldo_pysyy(self):
+        kortti = Maksukortti(100)
+        self.kassapaate.syo_edullisesti_kortilla(kortti)
+        self.assertEqual(self.kassapaate.edulliset, 0)
+
+    def test_maukkaaseen_ei_tarpeeksi_rahaa_saldo_pysyy(self):
+        kortti = Maksukortti(100)
+        self.kassapaate.syo_maukkaasti_kortilla(kortti)
+        self.assertEqual(self.kassapaate.maukkaat, 0)
+
+    def test_edulliseen_ei_tarpeeksi_saldoa_palauta_false(self):
+        kortti = Maksukortti(100)
+        self.assertEqual(self.kassapaate.syo_edullisesti_kortilla(kortti), False)
+
+    def test_maukkaaseen_ei_tarpeeksi_saldoa_palauta_false(self):
+        kortti = Maksukortti(300)
+        self.assertEqual(self.kassapaate.syo_maukkaasti_kortilla(kortti), False)
+
+    def test_edulliseen_ei_tarpeeksi_saldoa_kassa_ei_muutu(self):
+        kortti = Maksukortti(100)
+        self.kassapaate.syo_edullisesti_kortilla(kortti)
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
+
+    def test_maukkaaseen_ei_tarpeeksi_saldoa_kassa_ei_muutu(self):
+        kortti = Maksukortti(300)
+        self.kassapaate.syo_maukkaasti_kortilla(kortti)
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
+
+    def test_latauksessa_kortin_saldo_kasvaa(self):
+        self.kassapaate.lataa_rahaa_kortille(self.maksukortti, 100)
+        self.assertEqual(self.maksukortti.saldo, 1100)
+
+    def test_latauksessa_kassan_rahamaara_kasvaa(self):
+        self.kassapaate.lataa_rahaa_kortille(self.maksukortti, 100)
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100100)
+
+####
+
+    def test_kateinen_ei_riita_edulliseen_kassa_pysyy(self):
+        self.kassapaate.syo_edullisesti_kateisella(100)
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
+
+    def test_kateinen_ei_riita_edulliseen_lounasmaara_pysyy(self):
+        self.kassapaate.syo_edullisesti_kateisella(100)
+        self.assertEqual(self.kassapaate.edulliset, 0)
+
+    def test_kateinen_ei_riita_maukkaaseen_kassa_pysyy(self):
+        self.kassapaate.syo_maukkaasti_kateisella(100)
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
+
+    def test_kateinen_ei_riita_maukkaaseen_lounasmaara_pysyy(self):
+        self.kassapaate.syo_edullisesti_kateisella(100)
+        self.assertEqual(self.kassapaate.maukkaat, 0)
+
+    def test_kortin_lataus_negatiivinen_kassa_pysyy(self):
+        self.kassapaate.lataa_rahaa_kortille(self.maksukortti, -100)
+        self.assertEqual(self.kassapaate.kassassa_rahaa, 100000)
+
+    def test_kortin_lataus_negatiivinen_kortin_saldo_pysyy(self):
+        self.kassapaate.lataa_rahaa_kortille(self.maksukortti, -100)
+        self.assertEqual(self.maksukortti.saldo, 1000)
+
     
-
