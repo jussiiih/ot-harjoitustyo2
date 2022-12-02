@@ -21,3 +21,7 @@
 [Monopoli](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Monopoli.jpg)
 
 [Laajennettu Monopoli](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Laajennettu%20Monopoli.png)
+
+[Sekvenssikaavio]
+
+[Laajennettu sekvenssikaavio](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Laajempi%20sekvenssikaavio.png)
