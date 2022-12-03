@@ -16,12 +16,6 @@
 
 [tuntikirjanpito](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-### Viikko 3
+### Harjoitustyö
 
-[Monopoli](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Monopoli.jpg)
-
-[Laajennettu Monopoli](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Laajennettu%20Monopoli.png)
-
-[Sekvenssikaavio](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Sekvenssikaavio.png)
-
-[Laajennettu sekvenssikaavio](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/laskarit/viikko3/Laajempi%20sekvenssikaavio.png)
+[Changelog](https://github.com/jussiiih/ot-harjoitustyo2/blob/master/dokumentaatio/changelog.md)
