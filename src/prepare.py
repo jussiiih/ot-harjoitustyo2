@@ -1,5 +1,6 @@
 import random
 
+
 class Prepare:
     def __init__(self):
         self.players = []
