@@ -19,7 +19,7 @@ class Prepare:
                     print('Pelaajia täytyy olla vähintään 3')
                     continue
                 else:
-                    shuffled = self.shuffle_players(self.players)
+                    self.shuffle_players()
                     break
             
             if len(player_name) < 2:
