@@ -4,6 +4,7 @@ from game_running import GameRunning
 class SecrectMurderGame:
     def __init__(self):
         self.prepare = Prepare()
+        self.game_running = GameRunning
 
     def start(self):
         self.guide()

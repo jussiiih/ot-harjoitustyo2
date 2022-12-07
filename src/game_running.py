@@ -2,9 +2,10 @@ from prepare import Prepare
 
 class GameRunning:
     def __init__(self):
-        self.shuffled_players = prepare.self.players
+        self.prepare = Prepare()
+        self.shuffled_players = prepare.players
 
-    def check_target():
+    def check_target(self):
         while True:
             print("Kirjoita oma nimesi, niin näet kohteesi")
             own_name = input("Oma nimesi: ")
