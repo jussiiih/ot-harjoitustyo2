@@ -3,7 +3,7 @@ from prepare import Prepare
 class GameRunning:
     def __init__(self):
         self.prepare = Prepare()
-        self.shuffled_players = prepare.players
+        self.shuffled_players = self.prepare.players
 
     def check_target(self):
         while True:
