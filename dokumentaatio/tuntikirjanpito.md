@@ -8,4 +8,4 @@
 | 4.12 | 0,5    | Index-luokan luonti|
 | 5.12 | 2    | GameRunnig-luokan luonti |
 | 6.12. | 1    | Luokkien yhteensovittamista, debuggausta |
-| 7.12. | 1    | dgsr |
+| 8.12. | 1,5    | Debuggausta, index-tiedoston saaminen toimimaan, syntaksi-muutoksia prepare- ja game_running-tiedostoihin |
