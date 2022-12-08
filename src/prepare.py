@@ -20,7 +20,7 @@ class Prepare:
                     continue
                 else:
                     self.shuffle_players()
-                    break
+                    return self.players
             
             if len(player_name) < 2:
                 print('Nimessä täytyy olla vähintään 2 kirjainta!')
@@ -34,4 +34,4 @@ class Prepare:
                 print("Nimi on jo käytössä!")
                 continue
 
-            self.add_player(player_name)   
+            self.add_player(player_name)
