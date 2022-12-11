@@ -21,13 +21,13 @@ Yksinkertaisimmassa versiossa sovelluksella on ainoastaan yksi käyttäjärooli 
 
 ### Aloitusnäkymä 
  
-- Pelaajien nimet kirjoitetaan yksitellen, ja aina välissä painetaan OK. 
-  - Nimen tulee olla uniikki, siinä on oltava vain kirjaimia tai välilyöntejä, ja sen tulee olla pituudeltaan vähintään 2 kirjainta  
-- Kun kaikki pelaajat on kirjattu, painetaan VALMIS-painiketta, jolloin pelaajille arvotaan kohteet. 
+- Pelaajien nimet kirjoitetaan yksitellen, ja aina välissä painetaan OK. **TEHTY**
+  - Nimen tulee olla uniikki, siinä on oltava vain kirjaimia tai välilyöntejä, ja sen tulee olla pituudeltaan vähintään 2 kirjainta **TEHTY** 
+- Kun kaikki pelaajat on kirjattu, painetaan VALMIS-painiketta, jolloin pelaajille arvotaan kohteet. **TEHTY**
 
 ### Pelinäkymä 
 
-- Pelaaja voi kirjoittaa oman nimensä ja nähdä kohteensa. Sovellus siirtyy kohdenäkymään 
+- Pelaaja voi kirjoittaa oman nimensä ja nähdä kohteensa. Sovellus siirtyy kohdenäkymään **TEHTY**
 - Uusi peli -painikkeella voidaan aloittaa uusi peli puhtaalta pöydältä, ja palataan aloitusnäkymään 
 
 ### Kohdenäkymä 
